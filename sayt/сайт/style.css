@@ -1,0 +1,152 @@
+
+*{box-sizing: border-box;}
+ body{
+	margin: 0;
+	background: radial-gradient(#BFD6E2 1px, rgba(255, 255, 255, 0) 2 px);
+	background-size: 10px 10px;
+}
+
+
+			nav ul {list-style-type: none;
+	 		margin: 0;
+	 		padding: 0;
+	 		
+
+	 		}
+	 			
+	 		nav a {
+	 			display: block;
+	 			text-decoration: none;
+	 			outline: none;
+	 			transition: .4s ease-in-out;
+	 		}
+	 		
+	 		.topmenu{
+	 			backface-visibility: hidden;
+	 			background: rgba(167, 228, 168, 0.8);
+	 			top: 0;
+	 			
+	 		}
+
+	 		.topmenu > li{
+	 			display: inline-block;
+	 			position: relative;
+
+	 		}
+
+	 		.topmenu > li > a {
+	 			font-family: 'Exo 2', sans-serif;
+	 			height: 70px;
+	 			line-height: 70px;
+	 			padding: 0 30px;
+	 			font-weight: bold;
+	 			color: #003559;
+	 			text-transform: uppercase;
+
+	 		}
+
+	 		.down:after{
+	 			
+	 			margin-left: 8 px;
+	 			font-family: FontAwesome;
+	 		}
+
+	 		.topmenu li a:hover {color: green;}
+	 		.submenu {
+	 			background: white;
+	 			border: 2px solid #003559;
+	 			position: absolute;
+
+	 			visibility: hidden;
+	 			opacity: 0;
+	 			z-index: 5;
+	 			width: 150 px;
+	 			transform: perspective(600px) rotateX(-90deg);
+	 			transform-origin: 0% 0%;
+	 			transition: .6s ease-in-out;
+	 		}
+
+	 		.topmenu > li:hover .submenu{
+	 			visibility: visible;
+	 			opacity: 1;
+	 			transform: perspective(600px) rotateX(0deg);
+	 		}
+
+	 		.submenu li a {
+	 			color: #7f7f7f;
+	 			font-size: 13px;
+	 			line-height: 36px;
+	 			padding: 0 25px;
+	 			font-family: 'Kurale', serif;
+	 		}
+
+	 		.navbar {text-align: center; position: fixed; top:0; width: 100%}
+
+
+
+
+.header{width: 500px;  margin:0 auto; text-align: center; margin-top: 15vh;  }
+#ab{width: 40px ; height: 44px }
+#ba{ height: inherit ; min-width:10vw ; vertical-align: middle; color: green;}
+#ab, #ba{display: inline-block;vertical-align: middle;}
+
+
+
+#okompanii {background: rgba(167, 221, 168, 0.5);
+width: 500px; height: 70px;
+margin-left: auto; margin-right: auto;
+text-align: center; }
+	#okompanii img {width: 45px; height: auto; float: left;} 	
+
+#aminyam {background: rgba(223, 198, 143, 0.5);
+width: 500px; height: 96px; margin-left: auto; margin-right: auto;
+text-align: center;}
+#aminyam img {width: 95px; height: auto; float: right;}
+
+#bayki7a {background: rgba(153, 174, 234, 0.5);
+width: 500px; height: 210px; margin-left: auto; margin-right: auto;
+text-align: center;}
+#bayki7a img {width: 85px; height: auto; float: left;}
+	 	
+#zman {background: rgba(234, 168, 153, 0.5);
+width: 500px; height: 210px; margin-left: auto; margin-right: auto;
+text-align: center; margin-top: 2vh}
+#zman img {width: 130px; height: auto; float: right;}
+	 	
+	 	
+	 	
+#gazeta {background: rgba(158, 234, 153, 0.5);
+width: 500px; height: 110px; margin-left: auto; margin-right: auto;
+text-align: center; margin-top: 2vh}
+#gazeta img {width: 90px; height: auto; float: left; margin-left: 1vw; margin-top: 1vh}
+
+#nyamtella {background: rgba(179, 153,234, 0.5);
+width: 500px; height: 160px; margin-left: auto; margin-right: auto;
+text-align: center; margin-top: 2vh}
+#nyamtella img {width: 90px; height: auto; float: right; margin-left: 1vw; margin-top: 1vh}
+
+#cards {background: rgba(153, 234, 230, 0.5);
+width: 500px; height: 110px; margin-left: auto; margin-right: auto;
+text-align: center; margin-top: 2vh}
+#cards img {width: 100px; height: auto; float: left; margin-left: 1vw; margin-top: 1vh}
+
+#privileydoumka {background: rgba(254, 220,86, 0.5);
+width: 500px; height: 160px; margin-left: auto; margin-right: auto;
+text-align: center; margin-top: 2vh}
+#privileydoumka img {width: 90px; height: auto; float: right; margin-left: 1vw; margin-top: 1vh}
+
+
+
+
+	
+
+
+
+	 @media (max-width: 767 px ){
+	 	body{
+	 		display: block;
+	 	}
+	 	#header, #main, #footer{
+	 		width: auto;
+	 	}
+	 }
